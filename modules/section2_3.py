@@ -18,7 +18,7 @@ class MyCallback(tf.keras.callbacks.Callback):
         setting of the end of epoch
         Args:
             epoch(int): epoch number
-            logs'(dict): logs
+            logs(dict): logs
         """
         if logs.get('accuracy') > 0.95:
             print('\nReached 95% accuracy so cancelling training!')
