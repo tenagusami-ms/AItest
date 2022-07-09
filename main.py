@@ -5,13 +5,16 @@ from __future__ import annotations
 
 import asyncio
 
+from modules.Section1_6 import section1_6
+from modules.lower_layer_modules.Exceptions import Error
+
 
 async def main() -> None:
     """
     main program
     """
     try:
-        pass
+        section1_6()
 
     except Error as err:
         print(err.args)
